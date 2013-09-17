@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random sequence memory game</title>
+		<meta name="Content-type" content="text/html;charset=utf-8" />
+		<meta name="author" content="Jason Rammoray" />
+		<meta name="keywords" content="memory,game,sequence memory" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="logic.js"></script>
+	</head>
+	<body>
+		<h1>Random sequence memory game</h1>
+		<div id="main">
+			<div id="wrapper">
+				<section id="io">
+					<input type="text" class="sequence output" />
+				</section>
+				<canvas id="timer">
+				</canvas> 
+				<section id="hardlevel">
+					<div class="difficulty option">
+						<input type="radio" name="difficulty" value="easy" id="easy" checked/>
+						<label for="easy">Easy</label>
+					</div>
+					<div class="difficulty option">
+						<input type="radio" name="difficulty" value="medium" id="medium" />
+						<label for="medium">Medium</label>
+					</div>
+					<div class="difficulty option">
+						<input type="radio" name="difficulty" value="hard" id="hard" />
+						<label for="hard">Hard</label>
+					</div>
+				</section>
+				<section id="sequencetype">
+					<div class="mode option">
+						<input type="radio" name="mode" value="alphabetical" id="alpha" checked/>
+						<label for="alpha">Alphabetical</label>
+					</div>
+					<div class="mode option">
+						<input type="radio" name="mode" value="numeric" id="num" />
+						<label for="num">Numeric</label>
+					</div>
+					<div class="mode option">
+						<input type="radio" name="mode" value="alphanumeric" id="alphanum" />
+						<label for="alphanum">Alphanumeric</label>
+					</div>
+				</section>
+				<div id="generator">Generate</div>
+				<div id="check">Check</div>
+			</div>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>
